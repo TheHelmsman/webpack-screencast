@@ -1,5 +1,11 @@
 # webpack-screencast
 Based on https://youtu.be/kLMjOd-x0aQ?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn
+Covered subjects:
++ simple config
++ external access to modules
++ re-build on changes
++ source-maps
++ working with different environments
 
 ## how to build
 ```
