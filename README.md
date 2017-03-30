@@ -6,6 +6,9 @@ Covered subjects:
 + re-build on changes
 + source-maps
 + working with different environments
++ use babel
++ resolving
++ use minifier (UglifyJS)
 
 ## how to install
 + install node.js
@@ -26,13 +29,13 @@ npm install
 ```
 
 ## how to build 
-+ (for development)
++ (for development - normal version of build js with maps)
 ```
 NODE_ENV=development webpack
 ```
-+ (for production)
++ (for production - minified version of build.js)
 ```
-webpack
+NODE_ENV=production webpack
 ```
 
 ## how to run
