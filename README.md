@@ -7,6 +7,16 @@ Covered subjects:
 + source-maps
 + working with different environments
 
+## how to install
++ install node.js
+https://nodejs.org/en/download/package-manager/
+or
+https://nodejs.org/en/
++ install npm
+```
+sudo npm install npm -g
+```
+
 ## how to build
 ```
 webpack
