@@ -46,7 +46,7 @@ module.exports = {
   // each module will contains eval with param sourceUrl (actual sourcemap will not be build)
   // devtool: "eval"
 
-  devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : null,
+  devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : false,
 
   //  setting environment via plugins
   plugins: [
@@ -76,4 +76,19 @@ module.exports = {
       loader: 'babel-loader?presets[]=es2015'
     }]
   }
+
+};
+
+//  add minifier for production
+if(NODE_ENV == 'production') {
+  module.exports.plugins.push(
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        //  don't show unreacheable variables etc
+        warnings: false,
+        drop_console: true,
+        unsafe: true
+      }
+    })
+  );
 }
