@@ -1,5 +1,11 @@
 'use strict';
 
+//  const to define environment
+const NODE_ENV = process.env.NODE_ENV || 'development';
+
+//  import webpack that was installed locally
+const webpack = require('webpack');
+
 module.exports = {
   entry: './home',
   output: {
@@ -15,7 +21,8 @@ module.exports = {
 
   //  webpack will watch for file changes
   //  if something will be changed, webpack will run rebuild
-  watch: true,
+  //  will be set to true only if expression below will return true
+  watch: NODE_ENV == 'development',
 
   //  how much time to wait until run rebuild - default 300ms, changed to 250ms
   watchOptions: {
@@ -37,5 +44,14 @@ module.exports = {
   // devtool: "cheap-inline-module-source-map"
 
   // each module will contains eval with param sourceUrl (actual sourcemap will not be build)
-  devtool: "eval"
+  // devtool: "eval"
+
+  devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : "eval",
+
+  plugins: [
+    new webpack.DefinePlugin({
+      NODE_ENV : JSON.stringify(NODE_ENV),
+      LANG : JSON.stringify('ru')
+    })
+  ]
 }

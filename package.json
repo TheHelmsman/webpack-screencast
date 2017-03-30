@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TheHelmsman/webpack-screencast/issues"
   },
-  "homepage": "https://github.com/TheHelmsman/webpack-screencast#readme"
+  "homepage": "https://github.com/TheHelmsman/webpack-screencast#readme",
+  "dependencies": {
+    "webpack": "2.3.2"
+  }
 }

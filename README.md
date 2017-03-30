@@ -12,12 +12,25 @@ Covered subjects:
 https://nodejs.org/en/download/package-manager/
 or
 https://nodejs.org/en/
-+ install npm
++ install npm globally
 ```
 sudo npm install npm -g
 ```
++ get source code (skipp this step if you downloaded it as zip file from github)
+```
+git clone https://github.com/TheHelmsman/webpack-screencast.git
+```
++ run npm install to install all node_modules for the project
+```
+npm install
+```
 
-## how to build
+## how to build 
++ (for development)
+```
+NODE_ENV=development webpack
+```
++ (for production)
 ```
 webpack
 ```
