@@ -53,5 +53,13 @@ module.exports = {
       NODE_ENV : JSON.stringify(NODE_ENV),
       LANG : JSON.stringify('ru')
     })
-  ]
+  ],
+
+  //  adding BABEL using loaders
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      loader: 'babel-loader?presets[]=es2015'
+    }]
+  }
 }

@@ -42,3 +42,13 @@ static &
 
 ## view in browser
 http://127.0.0.1:8080/home.html
+
+## useful commands
++ open module repository (babel-loader) in browser
+```
+npm repo babel-loader
+```
+or (webpack repo)
+```
+npm repo webpack
+```
