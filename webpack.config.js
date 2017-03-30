@@ -46,7 +46,7 @@ module.exports = {
   // each module will contains eval with param sourceUrl (actual sourcemap will not be build)
   // devtool: "eval"
 
-  devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : "eval",
+  devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : null,
 
   plugins: [
     new webpack.DefinePlugin({
