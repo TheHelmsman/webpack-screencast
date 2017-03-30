@@ -48,12 +48,26 @@ module.exports = {
 
   devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : null,
 
+  //  setting environment via plugins
   plugins: [
     new webpack.DefinePlugin({
       NODE_ENV : JSON.stringify(NODE_ENV),
       LANG : JSON.stringify('ru')
     })
   ],
+
+  //  for all modules
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.js']
+  },
+
+  //  for module loaders
+  resolveLoader: {
+    modules: ['node_modules'],
+    moduleExtensions: ['*-loader'],
+    extensions: ['.js']
+  },
 
   //  adding BABEL using loaders
   module: {
