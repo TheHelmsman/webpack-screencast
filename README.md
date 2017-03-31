@@ -10,6 +10,7 @@ Covered subjects:
 + resolving [2.7]
 + use minifier (UglifyJS) [2.8]
 + multiple entry points [3.1]
++ multiple entry points - NoEmitOnErrorsPlugin [3.2]
 
 ## how to install
 + install node.js

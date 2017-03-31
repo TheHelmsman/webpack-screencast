@@ -11,7 +11,8 @@ module.exports = {
   context: __dirname + '/frontend',
   entry: {
     home: "./home",
-    about: "./about"
+    about: "./about",
+    welcome: "./welcome"
   },
   output: {
     path: __dirname + '/public',
@@ -56,6 +57,7 @@ module.exports = {
 
   //  setting environment via plugins
   plugins: [
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       NODE_ENV : JSON.stringify(NODE_ENV),
       LANG : JSON.stringify('ru')
