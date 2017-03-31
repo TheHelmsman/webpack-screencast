@@ -1,7 +1,9 @@
 'use strict';
 
-import welcome from './welcome';
+//  ...
 
-welcome("about");
+// import welcome from './welcome';
 
-exports.welcome = welcome;
+// welcome("about");
+
+// exports.welcome = welcome;

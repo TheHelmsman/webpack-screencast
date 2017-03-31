@@ -13,7 +13,8 @@ Covered subjects:
 + multiple entry points - NoEmitOnErrorsPlugin [3.2]
 + multiple entry points - CommonsChunkPlugin [3.3]
 + multiple entry points - build stats [3.4]
-
++ multiple entry points - CommonsChunkPlugin settings [3.5]
++ multiple entry points - more code in common [3.6]
 
 ## how to install
 + install node.js

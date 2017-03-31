@@ -11,7 +11,8 @@ module.exports = {
   context: __dirname + '/frontend',
   entry: {
     home: "./home",
-    about: "./about"
+    about: "./about",
+    common: ["./common", "./welcome"]
   },
   output: {
     path: __dirname + '/public',
@@ -62,8 +63,8 @@ module.exports = {
       LANG : JSON.stringify('ru')
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: "common",
-      minChunks: 2
+      name: "common"
+      // minChunks: 2
     })
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: "common",
