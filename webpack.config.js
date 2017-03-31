@@ -6,13 +6,19 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 //  import webpack that was installed locally
 const webpack = require('webpack');
 
+//  multiple entry points
 module.exports = {
-  entry: './home',
+  context: __dirname + '/frontend',
+  entry: {
+    home: "./home",
+    about: "./about"
+  },
   output: {
+    path: __dirname + '/public',
     //  filename for builded js file
-    filename: 'build.js',
+    filename: '[name].js',
     //  after build, export of module will be placed into "home" param
-    library: "home"
+    library: "[name]"
   },
 
   //  ++++++++++++++++++++++++++++++++++

@@ -1,14 +1,15 @@
 # webpack-screencast
 Based on https://youtu.be/kLMjOd-x0aQ?list=PLDyvV36pndZHfBThhg4Z0822EEG9VGenn
 Covered subjects:
-+ simple config
-+ external access to modules
-+ re-build on changes
-+ source-maps
-+ working with different environments
-+ use babel
-+ resolving
-+ use minifier (UglifyJS)
++ simple config [2.1]
++ external access to modules [2.2]
++ re-build on changes [2.3]
++ source-maps [2.4]
++ working with different environments [2.5]
++ use babel [2.6]
++ resolving [2.7]
++ use minifier (UglifyJS) [2.8]
++ multiple entry points [3.1]
 
 ## how to install
 + install node.js
