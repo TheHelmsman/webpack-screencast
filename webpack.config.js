@@ -62,8 +62,17 @@ module.exports = {
       LANG : JSON.stringify('ru')
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: "common"
+      name: "common",
+      minChunks: 2
     })
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name: "common",
+    //   chunks: ['about', 'home']]
+    // })
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name: "common-goods",
+    //   chunks: ['shop', 'order']
+    // })
   ],
 
   //  for all modules
