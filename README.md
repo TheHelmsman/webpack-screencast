@@ -11,6 +11,9 @@ Covered subjects:
 + use minifier (UglifyJS) [2.8]
 + multiple entry points [3.1]
 + multiple entry points - NoEmitOnErrorsPlugin [3.2]
++ multiple entry points - CommonsChunkPlugin [3.3]
++ multiple entry points - build stats [3.4]
+
 
 ## how to install
 + install node.js
@@ -56,4 +59,16 @@ npm repo babel-loader
 or (webpack repo)
 ```
 npm repo webpack
+```
++ view modules info on multiple entry points
+```
+webpack --display-modules
+```
+or (even more details)
+```
+webpack --display-modules -v
+```
+show statistics on build (upload generated file to webpack.github.io/analyse)
+```
+webpack --json --profile >stats.json
 ```
