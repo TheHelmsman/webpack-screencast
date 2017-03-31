@@ -15,6 +15,7 @@ Covered subjects:
 + multiple entry points - build stats [3.4]
 + multiple entry points - CommonsChunkPlugin settings [3.5]
 + multiple entry points - more code in common [3.6]
++ multiple entry points - multi-compilation [3.7]
 
 ## how to install
 + install node.js

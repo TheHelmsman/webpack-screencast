@@ -6,6 +6,9 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 //  import webpack that was installed locally
 const webpack = require('webpack');
 
+//  multi-compilation
+// module.exports = [{ }, { }, { }]
+
 //  multiple entry points
 module.exports = {
   context: __dirname + '/frontend',
